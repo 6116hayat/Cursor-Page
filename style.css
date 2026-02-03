@@ -1,0 +1,341 @@
+:root {
+    --black: #14120b;
+    --black-secondary: #1b1913;
+    --black-hover: #1d1b15;
+    --white: #d7d6d5;
+    --white-2: #edecec;
+    /* for icons */
+    --orange: #bf4105;
+    --white-text: #edecec;
+    --white-text-secondary: #9A9996;
+    --link-text-color: #BF4105;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./Resources/CursorGothic-main/fonts/CursorGothic-Regular.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./Resources/CursorGothic-main/fonts/CursorGothic-Italic.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./Resources/CursorGothic-main/fonts/CursorGothic-Bold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./Resources/CursorGothic-main/fonts/CursorGothic-BoldItalic.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color: var(--white-text);
+    background-color: var(--black);
+    font-family: "CursorGothic";
+}
+
+#headerSection {
+    /* border: 2px dashed white; */
+}
+
+#bigCont {
+    width: 90%;
+    height: auto;
+    /* margin: 0 5% 0 5%; */
+    margin: auto;
+
+    border: 2px dashed white;
+}
+
+#navMainBody {
+    /* padding: 0px 24px; */
+    /* border: 1px dashed white; */
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+
+.logo {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.navLinks {
+    /* padding: 1px; */
+    /* border: 2px dashed white; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px; */
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.navCTA {
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* border: 2px dashed white; */
+}
+
+.signBtn {
+    all: unset;
+    padding: 3px 5px 3px 5px;
+    width: 70px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 50px;
+}
+
+.downloadBtn {
+    all: unset;
+
+
+    padding: 3px 7px 3px 7px;
+    width: 70px;
+
+    color: black;
+    background-color: var(--white-text);
+
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+#heroSection {
+    /* border: 2px dashed white; */
+
+}
+
+#heroCont {
+    /* border: 2px dashed white; */
+    line-height: 2rem;
+}
+
+.heroDesc {
+    margin: 8% 0 15px 15px;
+    width: 40%;
+    font-size: 1.7rem;
+    /* border: 2px dashed white; */
+
+}
+
+.heroBtn {
+    all: unset;
+
+    margin: 0 0 65px 15px;
+    padding: 5px 15px 5px 15px;
+    width: 200px;
+    /* height: 20px; */
+
+    font-weight: lighter;
+    font-size: 0.80;
+    letter-spacing: 0.25px;
+
+    color: black;
+    background-color: var(--white-text);
+
+    text-align: center;
+    /* border: 1px solid white; */
+    border-radius: 50px;
+}
+
+.heroCTA {}
+
+.heroImg img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+#trustedSection {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    /* border: 2px dashed white; */
+}
+
+div.trustText {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#compCard {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    /* border: 2px dashed white; */
+}
+
+.compCard1 {
+    margin: auto;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--black-secondary);
+}
+
+#featureSection {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featureCol1 {
+    margin-top: 6%;
+
+    width: 100%;
+    height: 685px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.featureTxt {
+    margin: 0 0 0 15px;
+    padding: 5px;
+    width: 450px;
+    /* height: 650px; */
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+
+.featureImg {
+    margin: 15px;
+    width: 850px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.featureCol2 {
+    margin-top: 6%;
+
+    width: 100%;
+    height: 685px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.featureTxt {
+    margin: auto;
+    padding: 5px;
+    width: 450px;
+    /* height: 650px; */
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+
+.featureImg {
+    margin: 15px;
+    width: 850px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.featureCol3 {
+    margin-top: 6%;
+
+    width: 100%;
+    height: 685px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.featureTxt {
+    margin: 0 0 0 15px;
+    padding: 5px;
+    width: 450px;
+    /* height: 650px; */
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+
+.featureImg {
+    margin: 15px;
+    width: 850px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockImg {
+    width: 100%;
+    object-fit: cover;
+}
