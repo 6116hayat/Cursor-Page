@@ -2,6 +2,7 @@
     --black: #14120b;
     --black-secondary: #1b1913;
     --black-hover: #1d1b15;
+    --black-border: #2b2923;
     --white: #d7d6d5;
     --white-2: #edecec;
     /* for icons */
@@ -48,6 +49,12 @@
     padding: 0;
 }
 
+/* Extra Hover Class */
+.blackHover {
+    cursor: pointer;
+    background-color: var(--black-hover);
+}
+
 
 body {
     color: var(--white-text);
@@ -65,7 +72,7 @@ body {
     /* margin: 0 5% 0 5%; */
     margin: auto;
 
-    border: 2px dashed white;
+    /* border: 2px dashed white; */
 }
 
 #navMainBody {
@@ -76,6 +83,8 @@ body {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
+
+
 }
 
 
@@ -338,4 +347,329 @@ div.trustText {
 .blockImg {
     width: 100%;
     object-fit: cover;
+}
+
+#testimonalsSection {
+    margin-top: 10%;
+    /* border: 2px dashed white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.testiHead {
+    margin-bottom: 3%;
+
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.testiCardRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.testiCard {
+    margin: 5px;
+    padding: 20px;
+
+    width: 400px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--black-secondary);
+
+    border-radius: 5px;
+}
+
+.testCardUser {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 10px;
+}
+
+#storySection {
+    margin-top: 10%;
+}
+
+.storyHead {
+    margin: 0 0 25px 0;
+
+    font-size: 1.5rem;
+}
+
+/* .storyCardComp {
+    width: 100%;
+    border: 2px dashed white;
+} */
+
+.storyCardRow {
+    /* border: 2px dashed white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.storyCard {
+    /* border: 2px dashed white; */
+    width: 440px;
+    height: 550px;
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.storyCardTxt {
+
+    margin: 15px;
+
+    width: 400px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+
+}
+
+.storyCardImg {
+    margin: 15px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storyCardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#changelogSection {
+    margin-top: 10%;
+}
+
+.logHead {
+    margin: 0 0 25px 0;
+
+    font-size: 1.5rem;
+}
+
+.logCardComp {
+    /* border: 2px dashed white; */
+}
+
+.logCardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.logCard {
+    width: 300px;
+    height: 100px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.logCardHead span {
+    padding: 0px 5px 0px 5px;
+    margin-right: 10px;
+    width: 60px;
+    height: 20px;
+    border: 1px solid var(--white-text-secondary);
+    border-radius: 20px;
+}
+
+.logLink {
+    margin-top: 20px;
+    color: var(--link-text-color);
+}
+
+#teamSection {
+    margin-top: 10%;
+}
+
+.teamHead {
+    margin-bottom: 25px;
+
+    width: 810px;
+    height: 86px;
+
+    font-size: 2.5rem;
+}
+
+.teamBtn {
+    margin: 3% 0px 5% 5px;
+}
+
+.teambtn {
+    all: unset;
+
+    padding: 10px;
+
+    font-size: 1.2rem;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 25px;
+    font-weight: 200;
+}
+
+.teamImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#teamMainCont {
+    margin-top: 10%;
+
+    padding: 80px;
+
+    /* border: 2px dashed white; */
+    /* border: 2px dashed white; */
+
+    background-color: var(--black-secondary);
+    display: flex;
+    /* gap: 500px; */
+    justify-content: center;
+}
+
+.teamHighlightComp {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+    position: relative;
+}
+
+.recentHigh {
+    padding: 20px;
+
+    width: 300px;
+    height: 430px;
+    display: flex;
+    /* justify-content: center; */
+
+    position: sticky;
+    top: 100;
+
+    border: 2px dashed white;
+}
+
+/* .teamDesc {
+    border: 2px dashed white;
+
+} */
+
+.teamCardRow {
+    /* border: 2px dashed white; */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+
+.teamCard {
+    padding: 15px;
+
+    width: 600px;
+    height: 120px;
+
+    /* border: 2px dashed white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #201E18;
+
+    border-radius: 5px;
+}
+
+#finalCTA {
+
+    height: 350px;
+
+    /* border: 2px dashed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigHeading {
+    font-size: 4rem;
+}
+
+.finalBtn {
+    all: unset;
+
+    padding: 5px 10px 5px 10px;
+
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+
+    color: var(--black);
+    background-color: var(--white);
+
+}
+
+
+#footerSection {
+    padding: 70px 80px 30px;
+    background-color: var(--black-secondary);
+}
+
+.footRow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.footRow div li:first-child {
+    color: var(--white-text-secondary);
+}
+
+.footRow li {
+    list-style: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    /* transition: color 0.2s ease; */
+}
+
+.footfinalComp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 14px;
+    color: var(--white-text-secondary);
 }
