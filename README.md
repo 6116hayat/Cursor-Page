@@ -30,7 +30,7 @@ Challenges Faced
 
 🧱 Pure HTML & CSS: no libraries or frameworks were used, which meant manually handling layout, spacing, and responsiveness
 
-[Cursor Page Live ↗](cursorhayat.netlify.app)
+[Cursor Page Live ↗](https://cursorhayat.netlify.app/)
 
 ## Preview
 
